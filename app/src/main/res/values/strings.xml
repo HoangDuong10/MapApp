@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Map</string>
+    <string name="enter_keyword">Enter keyword</string>
+    <string name="no_matching_results_were_found">Không tìm thấy kết quả phù hợp</string>
+</resources>

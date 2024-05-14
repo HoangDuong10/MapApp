@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_layout"
+    tools:context=".AddressSearchActivity">
+
+    <EditText
+        android:drawableStart="@drawable/ic_search"
+        android:textSize="@dimen/text_size_normal"
+        android:background="@drawable/shape_rec_edittext_bg_corner_define_dimen_20"
+        android:id="@+id/edtAddress"
+        android:hint="@string/enter_keyword"
+        android:padding="@dimen/define_dimen_10"
+        android:textColorHint="@color/black_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_cancel"
+        android:layout_margin="@dimen/define_dimen_14"
+        tools:ignore="SpUsage,TextFields"
+        android:minHeight="48dp"
+        android:importantForAutofill="no" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/define_dimen_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtAddress"
+        android:id="@+id/rclvListAddress"/>
+    <TextView
+        android:id="@+id/tvNoResult"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/no_matching_results_were_found"
+        android:visibility="gone"/>
+
+</RelativeLayout>
